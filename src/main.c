@@ -16,8 +16,8 @@ int main() {
     SDL_Window* window = NULL;
     SDL_Renderer* renderer = NULL;
 
-    if (!SDL_CreateWindowAndRenderer("SDL3 App", 800, 600, 0, &window, &renderer)) {
-        SDL_Log("CreateWindowAndRenderer Error: %s", SDL_GetError());
+    if (!SDL_CreateWindowAndRenderer("Computer Graphics", 800, 600, 0, &window, &renderer)) {
+        SDL_Log("error: %s", SDL_GetError());
         SDL_Quit();
         return 1;
     }
